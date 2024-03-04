@@ -9,3 +9,19 @@ Updates an access group IP in Cloudflare from a DNS lookup.
 
 # Requirements
 1. You already have a dynamic DNS service setup, such as noip.com or duckdns.com
+
+# Notes
+To run the script, you may need to install 'requests' via
+```
+pip install requests
+```
+
+# Running as a cron job on Ubuntu
+To run this script every 5 minutes, for example, using crontab, you need to add an entry to your crontab file.
+
+Open your crontab file for editing using the command crontab -e.
+Add the following line to the end of the file:
+```
+*/5 * * * * /usr/bin/python3 /path/to/your/script.py
+```
+This line tells cron to run the specified Python3 script every 5 minutes. Make sure to replace /path/to/your/script.py with the actual path to the script.
