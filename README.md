@@ -22,6 +22,6 @@ To run this script every 5 minutes, for example, using crontab, you need to add 
 Open your crontab file for editing using the command crontab -e.
 Add the following line to the end of the file:
 ```
-*/5 * * * * /usr/bin/python3 /path/to/your/script.py
+*/5 * * * * /usr/bin/python3 /path/to/your/cloudflare_accessgroup_update.py
 ```
 This line tells cron to run the specified Python3 script every 5 minutes. Make sure to replace /path/to/your/script.py with the actual path to the script.
