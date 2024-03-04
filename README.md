@@ -24,4 +24,4 @@ Add the following line to the end of the file:
 ```
 */5 * * * * /usr/bin/python3 /path/to/your/cloudflare_accessgroup_update.py
 ```
-This line tells cron to run the specified Python3 script every 5 minutes. Make sure to replace /path/to/your/script.py with the actual path to the script.
+This line tells cron to run the script every 5 minutes. Make sure to replace /path/to/your/cloudflare_accessgroup_update.py with the actual path to the script.
